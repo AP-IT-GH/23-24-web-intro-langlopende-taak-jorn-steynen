@@ -1,0 +1,64 @@
+html, body {
+    box-sizing: border-box;
+    background-color: #393939;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dd611e;
+    height: 100%;
+    width: 100%;
+    
+  }
+  .border-right {
+    border-right: 2px solid #dd611e; 
+}
+.border-left {
+  border-left: 1px solid #dd611e; 
+}
+
+  /*removes the default underlines from links */
+  a, a:hover {
+    text-decoration: none;
+    color: #dd611e;
+  }
+  /* kleur*/
+  .oranje, span{
+    color: #dd611e;
+  }
+  /* causes the text to be spread evenly across the width of the element */
+  .justify { 
+    text-align: justify; 
+  }
+
+  /* Define the color for the placeholder text */
+  ::placeholder {
+    color: #dd611e; /* Change the color to your desired color */
+  }
+  .form-control::-webkit-input-placeholder {
+    color: #dd611e; /* Change the color to your desired color */
+  }
+  
+  .form-control:-moz-placeholder {
+    color: #dd611e; /* Change the color to your desired color */
+  }
+  
+  .form-control::-moz-placeholder {
+    color: #dd611e; /* Change the color to your desired color */
+  }
+  
+  .form-control:-ms-input-placeholder {
+    color: #dd611e; /* Change the color to your desired color */
+  }
+  
+  input[type="search"].form-control {
+    background-color: #585858; /* Change the color to your desired background color searchbar */
+  }
+  aside.col-md-3 {
+    border-color: #dd611e !important; /* Change the border color of aside*/
+  }
+
+  body {
+    padding-top: 150px; /* Adjust this value according to the height of your navbar */
+  }
+  
+

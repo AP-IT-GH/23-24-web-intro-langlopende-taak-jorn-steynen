@@ -1,0 +1,12 @@
+#contactMap {
+    width: 100%; /* neem de volle breedte in van het parent element */
+    height: 300px;
+}
+#iemandThuisMap {
+    width: 100%; /* neem de volle breedte in van het parent element */
+    height: 100%;
+}
+#weerMap {
+    width: 100%; /* neem de volle breedte in van het parent element */
+    height: 100%;
+}

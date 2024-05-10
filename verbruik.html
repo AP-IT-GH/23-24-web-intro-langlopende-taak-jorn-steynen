@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verbruik</title>
+    <!-- reset jouw css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color: #666565;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" alt="Logo" width="100" height="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link oranje" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link oranje" href="diensten.html">dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle oranje" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              diensten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item oranje" href="camera.html">camera</a></li>
+              <li><a class="dropdown-item oranje" href="thermostaat.html">thermostaat</a></li>
+              <li><a class="dropdown-item oranje" href="iemandthuis.html">iemand thuis?</a></li>
+              <li><a class="dropdown-item oranje" href="muziek.html">muziek</a></li>
+              <li><a class="dropdown-item oranje active" href="verbruik.html">verbruik</a></li>
+              <li><a class="dropdown-item oranje" href="weer.html">weer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link oranje" aria-current="page" href="contact.html">contact</a>
+          </li>
+        </ul>
+      
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+          </form>
+    </div>
+  </div>
+</nav>
+</header>
+<main>
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <h1 class="mb-4 text-center">
+                  <i class="bi bi-lightning-charge fs-1"></i> Slim Energiebeheer <i class="bi bi-lightbulb fs-1"></i> <br>
+                  Meet en beheer je energieverbruik
+              </h1>
+              <p class="mb-4">Ontdek de kracht van slim energiebeheer met ons geavanceerde smart home-dashboard. Met real-time monitoring en gedetailleerde analyses van je energieverbruik, biedt ons systeem je de tools om je energiekosten te verlagen en je ecologische voetafdruk te verkleinen. Onze slimme technologie maakt het gemakkelijk om je verbruik in de gaten te houden en te optimaliseren, direct vanaf je smartphone of elk ander verbonden apparaat.</p>
+              <h2 class="mb-4">Kenmerken en Voordelen:</h2>
+              <ul class="mb-4">
+                  <li class="mb-4">Real-Time Monitoring: Krijg direct inzicht in je actuele energieverbruik. Zie precies hoeveel energie je verbruikt en wanneer je het verbruikt.</li>
+                  <li class="mb-4">Gedetailleerde Verbruiksrapporten: Ontvang gedetailleerde analyses en rapporten, waardoor je patronen in je energieverbruik kunt identificeren en begrijpen.</li>
+                  <li class="mb-4">Slimme Energiebesparingen: Ons systeem biedt slimme tips en aanbevelingen voor energiebesparing, afgestemd op jouw unieke verbruikspatroon.</li>
+                  <li class="mb-4">Automatisering en Schema's: Automatiseer je energieverbruik op basis van je leefschema. Stel je voorkeuren één keer in en laat ons systeem het werk doen om energie te besparen terwijl je weg bent.</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <figure class="text-center">
+      <img src="./assets/verbruik1.jpg" alt="dashboard energieverbruik" class="img-fluid">
+      <figcaption>&copy; community.home-assistant.io.com</figcaption>
+  </figure>
+</main>
+
+<hr>
+<footer class="container-fluid text-center h6 small p-4">&copy; 2024 - Jorn Steynen - Grad. IoT groep1</footer>
+</body>
+</html>

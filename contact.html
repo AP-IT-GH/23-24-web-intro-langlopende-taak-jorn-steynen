@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!-- reset jouw css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link href="./css/mapStyle.css" rel="stylesheet">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""defer></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./js/mapScriptContact.js" defer></script>
+  </head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color: #666565;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="./assets/logo.png" alt="Logo" width="100" height="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link oranje" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link oranje" href="diensten.html">dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle oranje" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              diensten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item oranje" href="camera.html">camera</a></li>
+              <li><a class="dropdown-item oranje" href="thermostaat.html">thermostaat</a></li>
+              <li><a class="dropdown-item oranje" href="iemandthuis.html">iemand thuis?</a></li>
+              <li><a class="dropdown-item oranje" href="muziek.html">muziek</a></li>
+              <li><a class="dropdown-item oranje" href="verbruik.html">verbruik</a></li>
+              <li><a class="dropdown-item oranje" href="weer.html">weer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active oranje" aria-current="page" href="contact.html">contact</a>
+          </li>
+        </ul>
+      
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+          </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="shopintro" class="row">
+          <div class="col-12 mb-3">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+            <p>Vul hier het contactformulier in.</p>
+          </div>
+          <hr>
+          <div class="col-md-6">
+            <label for="contactWhom" class="form-label">wie wenst u te contacteren?</label>
+            <select id="contactWhom" class="form-select">
+              <option selected>admin</option>
+              <option>webdeveloper</option>
+            </select>
+          </div>
+          <form action="#" method="post">
+            <fieldset class="row g-3 mb-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3">uw gegevens</legend>
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">voornaam</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">achternaam</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="mobile" class="form-label">mobiel</label>
+                    <input type="tel" class="form-control" id="mobile" pattern="[0-9]{4}.[0-9]{2}.[0-9]{2}" placeholder="0469.69.69">
+                </div>
+                <div class="col-md-6">
+                    <label for="birthDate" class="form-label">e-mailadres</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">boodschap</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Schrijf hier je boodschap."></textarea> 
+                </div>
+            </fieldset>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">verzenden</button>
+            </div>
+        </form>
+        
+
+        </section>
+        <hr>
+      </main>
+
+      <aside class="col-md-3 border-start ps-5">
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+        <p>Jorn Steynen<br>
+          e-mail: <a href="mailto:jornsteynen@gmail.com">jornsteynen@gmail.com</a><br>
+          telefoon: +32 472 212 917 <br><br>
+          adres: <br>
+          Rerum Novarumlaan 104 <br>
+          2170 Merksem</p>
+          <div class="container">
+            <div class="row">
+              <main class="col-md-9 pe-3">
+                <section id="map"  class="row">
+                  <div id="contactMap" class="col-12 mb-3"></div>
+              </section>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="bi bi-youtube koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center h6 small p-4">&copy; 2024 - Jorn Steynen - Grad. IoT groep1</footer>
+</body>
+
+</html>
