@@ -27,6 +27,7 @@
     crossorigin=""defer></script>
     <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
     <script src="./js/mapScriptWeer.js" defer></script>
+    <script src="./js/script-weer.js" defer></script>
     
     
   </head>
@@ -94,9 +95,15 @@
       <hr>
       <div class="row align-items-center">
           <div class="col-md-6">
-              <p class="text-center">Het weer in Wilrijk: <br>INLADEN API</p>
+            <div class="container text-center">
+              <h2>Actueel weer</h2>
+            </div>
+              <div class="text-center" id="weather-info">
+              </div>
+          
               <section id="map" class="row mb-3">
-                  <div id="weerMap" style="height: 300px;"></div>
+                  <div class="fluid rounded" id="weerMap" style="height: 300px;">
+                  </div>
               </section>
           </div>
           <div class="col-md-6">
