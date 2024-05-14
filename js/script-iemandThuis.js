@@ -12,8 +12,8 @@ fetch('https://randomuser.me/api/?results=1')
         for (let i = 0; i < response.results.length; i++) {
             const user = response.results[i];
             html += `
-                <div class="card col-12 col-sm-6 col-md-4 text-center d-flex align-items-center justify-content-center">
-                    <div class="card-body d-flex flex-column align-items-center">
+                <div class="card col-12 text-center">
+                    <div class="card-body">
                         <div class="text-container text-center">
                             <p class="card-title fs-6">Wie is er thuis?</p>
                             <img src="${user.picture.large}" class="card-img-top rounded-circle mt-3" alt="foto van ${user.name.first} ${user.name.last}" style="width: 200px; height: auto;">
