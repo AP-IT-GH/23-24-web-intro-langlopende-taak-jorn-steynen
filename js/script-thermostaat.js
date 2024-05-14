@@ -11,7 +11,7 @@
       const weatherInfo = document.getElementById('temperatuur');
       const weatherData = `
           <br>
-          <p> ${data.main.temp} °C</p>
+          <p style="font-size: xx-large;"> ${data.main.temp} °C</p>
       `;
       weatherInfo.innerHTML = weatherData;
   })
