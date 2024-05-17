@@ -11,10 +11,32 @@ fetch(apiUrl)
     const weatherInfo = document.getElementById('weather-info');
     const weatherData = `
         <br>
-        <p>Huidige temperatuur in Wilrijk: ${data.main.temp} °C</p>
-        <p>Voelt aan als: ${data.main.feels_like} °C</p>
-        <p>Minimale temperatuur: ${data.main.temp_min} °C</p>
-        <p>Maximale temperatuur: ${data.main.temp_max} °C</p>
+        <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">LOCATIE: Wilrijk</th>
+            <th scope="col"><i class="bi bi-thermometer-half"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Effectieve temperatuur</td>
+            <td>${data.main.temp} °C</td>
+          </tr>
+          <tr>
+            <td>Voelt aan als</td>
+            <td>${data.main.feels_like} °C</td>
+          </tr>
+          <tr>
+            <td>Minimale temperatuur</td>
+            <td>${data.main.temp_min} °C</td>
+          </tr>
+          <tr>
+            <td>Maximale temperatuur</td>
+            <td>${data.main.temp_max} °C</td>
+          </tr>
+        </tbody>
+      </table>
     `;
     weatherInfo.innerHTML = weatherData;
 })

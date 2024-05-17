@@ -11,12 +11,12 @@ html, body {
   }
   .border-right {
     border-right: 2px solid #dd611e; 
-}
-.border-left {
-  border-left: 1px solid #dd611e; 
-}
+  }
+  .border-left {
+  border-left: 2px solid #dd611e; 
+  }
 
-  /*removes the default underlines from links */
+  /*verwijdert de standaard onderlijning bij links*/
   a, a:hover {
     text-decoration: none;
     color: #dd611e;
@@ -25,66 +25,54 @@ html, body {
   .oranje, span{
     color: #dd611e;
   }
-  /* causes the text to be spread evenly across the width of the element */
+  /* spreid te tekst gelijkmatig over breedte van element*/
   .justify { 
     text-align: justify; 
   }
 
-  /* Define the color for the placeholder text */
-  ::placeholder {
-    color: #dd611e; /* Change the color to your desired color */
-  }
-  .form-control::-webkit-input-placeholder {
-    color: #dd611e; /* Change the color to your desired color */
-  }
-  
-  .form-control:-moz-placeholder {
-    color: #dd611e; /* Change the color to your desired color */
-  }
-  
-  .form-control::-moz-placeholder {
-    color: #dd611e; /* Change the color to your desired color */
-  }
-  
-  .form-control:-ms-input-placeholder {
-    color: #dd611e; /* Change the color to your desired color */
+  /*kleur placeholder zoekbalk */
+  ::placeholder, .form-control::-webkit-input-placeholder, .form-control:-moz-placeholder, .form-control::-moz-placeholder, .form-control:-ms-input-placeholder   {
+    color: #dd611e; 
   }
   
   input[type="search"].form-control {
-    background-color: #585858; /* Change the color to your desired background color searchbar */
+    background-color: #585858; 
   }
+
+  /* kleur border van aside*/
   aside.col-md-3 {
     border-color: #dd611e !important; /* Change the border color of aside*/
   }
 
+  /* Duuwt body naar beneden voor fixed-top navbar */
   body {
-    padding-top: 150px; /* Adjust this value according to the height of your navbar */
+    padding-top: 150px; 
   }
+  
+  
   /* random user API */
- 
-
-  .card {
+ .card {
     background: none;
     border: none;
 }
 
 .card .card-title {
-    color: #dd611e !important; /* Ensures this color is applied */
-    font-family: inherit !important; /* Ensures this font-family is applied */
-    text-transform: inherit !important; /* Ensures text-transform is applied */
-    text-align: center !important; /* Ensures text-align is applied */
-    font-size: 1.5rem !important; /* Adjust the font size as needed */
-    font-weight: normal !important; /* Ensures font-weight is applied */
-    padding-top: 1rem !important; /* Ensures padding-top is applied */
+    color: #dd611e !important;
+    font-family: inherit !important; 
+    text-transform: inherit !important; 
+    text-align: center !important; 
+    font-size: 1.5rem !important; 
+    font-weight: normal !important; 
+    padding-top: 1rem !important; 
 }
 
 .card-img-top {
-    margin-top: 1rem; /* Space between text and image */
+    margin-top: 1rem; /* ruimte tussen tekst en afbeelding */
 }
 
 .text-container {
-    text-align: center; /* Ensure text is centered */
-    margin-bottom: 1rem; /* Space between text and image */
+    text-align: center; 
+    margin-bottom: 1rem; 
 }
 
 .card-body {
@@ -93,4 +81,34 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
+
+/* weertabel CSS */
+.table {
+  background-color: #393939 !important; 
+  color: inherit !important; 
+}
+
+.table td, .table th {
+  background-color: inherit !important; 
+  color: inherit !important; 
+}
+
+.table-bordered {
+  border: 1px solid #dd611e !important;
+}
+
+
+  /* Border Right thermostaatpagina*/
+.custom-border {
+    border-right: 3px solid #dd611e; 
+}
+
+@media (max-width: 767.98px) { 
+    .custom-border {
+        border-right: none;
+        border-bottom: 3px solid #dd611e;
+    }
+}
+
 
